@@ -1,0 +1,151 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.title__main, .title__forms{
+    font-family: 'Pacifico', cursive;
+    color: #771394;
+}
+.title__forms{
+    text-align: center;
+    margin-top: 40px;
+}
+.subtitle{
+    text-align: end;
+}
+
+.navbar{
+    background-color: #ffa8f9;
+}
+.nav-item:hover {
+    color: #A019C7;
+}
+.nav-item{
+    color: #3B3437;
+}
+
+.title{ 
+    font-family: 'Pacifico', cursive;
+    font-size: 120px;
+    color: #771394;
+    justify-content: flex-end;
+}
+
+.tela__inicial{
+    background-color: #ffa8f9;
+    background-image: linear-gradient(180deg, #ffa8f9 25%, #ffffff 100%);
+    margin-bottom: 15px;
+}
+
+.container__telainicial{
+    display: flex;
+}
+
+.section__eventos, .section__quemsomos, .idealiadora{
+    margin-top: 50px;
+}
+
+.btn-teste {
+    color: #D4146B;
+    border-color: #D4146B;
+}
+.redes_sociais:hover{
+    transform: scale(1.2);
+}
+.container__redes_sociais{
+    max-width: 55%;
+    justify-content: center;
+}
+
+.button__form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imagem__perfil{
+    height: 250px;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    margin: 0 auto;
+    display: flex;
+}
+.idealizadora{
+    background-color: #ffa8f9;
+}
+
+.container__idealizadora{
+    align-items: center
+}
+
+.footer{
+    background-color: #3A0947;
+    padding: 10px;
+    color: white;
+}
+
+.footer p{
+    margin-top: 10px;
+    text-align: center
+}
+
+.arrow__indication{
+    margin-bottom: 100px;
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #3A0947;
+    fill: transparent;
+    stroke-width: 1px;	
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+@media (max-width: 420px) {
+    .title{ 
+        font-size: 75px;
+    }
+    .arrow__indication{
+        display: none;
+    }
+}
